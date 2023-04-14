@@ -1,0 +1,25 @@
+<head>
+    <meta charset="utf-8">
+    <title>PDS Senior Project Website</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/project.css') }}">
+</head>
+
+<body>
+    <div id ="segment">
+        <center><h1>{{title}}</h1></center>
+        <center><h3>{{name}} '{{year}}</h3></center>
+        <center><h4>{{mentor}}</h4></center>
+        <center><h4>{{category}}</h4></center>
+    </div>
+
+    <center><p>{{description}}</p></center>
+
+    <center><img src ="{{url_for('static', filename='images/projs/'+image)}}"></center>
+
+    <center><a class = "normal" href={{link}}>Project Link</a></center>
+
+    <center><a class = "blue" href="/projects/">Back</a></center>
+</body>
+
+
+

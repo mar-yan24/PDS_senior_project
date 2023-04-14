@@ -1,0 +1,15 @@
+<head>
+    <meta charset="utf-8">
+    <title>PDS Senior Project Website</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+</head>
+
+<center><img src="{{url_for('static', filename='images/pds.png')}}" align="middle" /></center>
+
+<div class="segment">
+    <h1>Senior Project Website</h1>
+</div>
+
+<form name = "myform" action = "/projects">
+    <button class="blue" type="submit">View Projects</button>
+</form>

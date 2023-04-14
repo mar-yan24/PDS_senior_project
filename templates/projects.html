@@ -1,0 +1,58 @@
+<head>
+    <meta charset="utf-8">
+    <title>PDS Senior Project Website</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/projects.css') }}">
+</head>
+
+<body>
+    <!--<section class = "project-list">-->
+    <secton class = "header">
+        <center><h1>Projects</h1></center>
+    </secton>
+    <script type = "module" src = "{{ url_for('static',filename='javascript/script.js') }}"></script>
+    <div class ="wrapper">
+        <center>
+            <div id="search-container">
+                <input autocomplete = "off" type="search" id="search-input" placeholder="Search student name here..."/>
+                <button id = "search">Search</button>
+            </div>
+        </center>
+        <div id ="buttons">
+            <button class = "button-value" onclick="filterProject('all')">All</button>
+            <button class = "button-value" onclick="filterProject('Creative Project')">Creative Project</button>
+            <button class = "button-value" onclick="filterProject('Developing Voice')">Developing Voice</button>
+            <button class = "button-value" onclick="filterProject('Interdisciplinary Fusion')">Interdisciplinary Fusion</button>
+            <button class = "button-value" onclick="filterProject('Personal Writing')">Personal Writing</button>
+            <button class = "button-value" onclick="filterProject('Curriculum Designer')">Curriculum Designer</button>
+            <button class = "button-value" onclick="filterProject('Internship')">Internship</button>
+        </div>
+        <div id ="gradbuttons">
+            <button class = "grad-button" onclick="filterProject2('All Years')">All Years</button>
+            <button class = "grad-button" onclick="filterProject2('2021')">2021</button>
+            <button class = "grad-button" onclick="filterProject2('2022')">2022</button>
+        </div>
+        <div id = projects></div>
+    </div>
+
+
+    <!--
+        <div class = "project-container">
+        {% for senior in seniors %}
+        <div class = "card">
+            <div class = "title">{{senior[1]}}</div>
+            <div class = "image"><img src ="{{url_for('static', filename='images/'+senior[6])}}"></div>
+            <div class = "text">
+            <h3>{{senior[0]}}</h3>
+        </div>
+                <a class = "link" href={{senior[0].replace(" ", "%20")}}>
+                    <div class = "view-button">
+                        View
+                    </div>
+                </a>
+        </div>
+        {% endfor %}
+    </div>
+    -->
+<!--</section>-->
+
+</body>

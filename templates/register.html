@@ -1,0 +1,86 @@
+<head>
+    <meta charset="utf-8">
+    <title>PDS Senior Project Website</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/register.css') }}">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> <!--info button-->
+</head>
+
+
+
+<form action = "/register/success" method="POST" autocomplete="off" enctype = "multipart/form-data">
+    <div class="segment">
+        <h1>Register Your Senior Project</h1>
+    </div>
+    <label>
+        <input type="text" name = "name" placeholder="Name"/>
+        <div class="info">
+            <i class="icon-info-sign"></i>
+            <span class="extra-info">
+            Your name i.e. John Smith
+            </span>
+        </div>
+    </label>        
+    <label>
+        <input type="text" name = "mentor" placeholder="Mentor"/>
+        <div class="info">
+            <i class="icon-info-sign"></i>
+            <span class="extra-info">
+            Your project mentor/advisor
+            </span>
+        </div>
+    </label>
+    <label>
+        <input type="text" name = "title" placeholder="Project Title"/>
+        <div class="info">
+            <i class="icon-info-sign"></i>
+            <span class="extra-info">
+            The title of your project (10 words or less)
+            </span>
+        </div>
+    </label>
+    <label>
+        <select name="category" id="category">
+            <option value="Category">Category</option>
+            <option value="Creative or Research Project">Creative or Research Project</option>
+            <option value="Personal Writing">Personal Writing</option>
+            <option value="Curriculum Designer">Curriculum Designer</option>
+            <option value="Internship">Internship</option>
+        </select>
+        <div class="info">
+            <i class="icon-info-sign"></i>
+            <span class="extra-info">
+            Select your project's category from the dropdown
+            </span>
+        </div>
+    </label>
+    <label>
+        <input type="text" name = "description" placeholder="Description"/>
+        <div class="info">
+            <i class="icon-info-sign"></i>
+            <span class="extra-info">
+            If you had thirty seconds to tell someone about your project, what would you tell them?
+            </span>
+        </div>
+    </label>
+    <label>
+        <input type="text" name = "link" placeholder="Link"/>
+        <div class="info">
+            <i class="icon-info-sign"></i>
+            <span class="extra-info">
+            The link to your Google Drive project folder
+            </span>
+        </div>
+    </label>
+    <label>
+        Upload image of yourself
+        <input type = "file" name = "image1" accept="image/png, image/gif, image/jpeg, image/jpg" />
+    </label>
+    <label>
+        Upload image that represents your project
+        <input type = "file" name = "image2" />
+    </label>
+    <button class="blue" type="submit">Submit</button>
+    <center><a class = "blue" href="/">Back</a></center>
+</form>
+
+
