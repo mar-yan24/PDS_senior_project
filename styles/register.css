@@ -1,0 +1,129 @@
+body, html {
+    background-color: #ebecf0;
+    font-family: 'Montserrat', sans-serif;
+}
+body, p, input, select, textarea, button, a {
+    letter-spacing: -0.2px;
+    font-size: 16px;
+}
+div, p {
+    color: #202e69;
+    text-shadow: 1px 1px 1px #fff;
+}
+form {
+    padding: 16px;
+    width: 320px;
+    margin: 0 auto;
+}
+.segment {
+    padding: 32px 0;
+    text-align: center;
+}
+button, input, select {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 320px;
+    padding: 16px;
+    color: #202e69;
+    background-color: #ebecf0;
+    text-shadow: 1px 1px 0 #fff;
+}
+label {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+}
+input, select {
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input,select:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+button {
+    color: #202e69;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+button:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+button:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+button .icon {
+    margin-right: 8px;
+}
+button.unit {
+    border-radius: 8px;
+    line-height: 0;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 19.2px;
+}
+button.unit .icon {
+    margin-right: 0;
+}
+button.blue {
+    display: block;
+    width: 100%;
+    color: #babecc;
+}
+
+select, ::placeholder{
+    color: #202e69;
+}
+
+a{
+    text-decoration-line: none;
+    color: #202e69;
+    background-color: #ebecf0;
+}
+
+.extra-info {
+    display: none;
+    line-height: 30px;
+    font-size: 12px;
+    position: relative;
+    top: 0;
+  }
+  
+.info:hover .extra-info {
+    display: block;
+}
+  
+.info {
+    font-size: 10px;
+    padding-left: 5px;
+    width: 20px;
+    border-radius: 15px;
+}
+  
+.icon-info-sign{
+    left: 50%;
+}
+
+.info:hover {
+    padding: 0 0 0 5px;
+    width: 315px;
+    text-align: left !important;
+}
+#o1 {
+    background-color: blue;
+}
