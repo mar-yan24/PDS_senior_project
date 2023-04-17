@@ -1,0 +1,117 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebecf0;
+}
+
+h1 {
+    color: #202e69;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input {
+    background-color: transparent;
+    width: 40%;
+    border: 2px solid #202e69;
+    border-radius: 320px;
+    padding: 1em .3em;
+    margin-right: 100px;
+}
+
+#search-container input:focus {
+    border-bottom-color: #202e69;
+}
+
+#search-container button {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 320px;
+    padding: 16px;
+    background-color: #202e69;
+    color:#ebecf0;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.button-value, .grad-button {
+    border: 2px solid #202e69;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #202e69;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.active{
+    background-color: #202e69;
+    color: white;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+
+.card {
+    background-color: white;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, .08);
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h4 {
+    font-weight: 500;
+}
+
+.year-hidden, .category-hidden{
+    display: none;
+}
+
+@media screen and (max-width: 720px){
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+    #projects{
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
+}
